@@ -3,11 +3,9 @@
 def f(x):
     return x**3 - x**2 + 2
 
-# Defining derivative of function
+
 def g(x):
     return 3*x**2 - 2*x 
-
-# Implementing Newton Raphson Method
 
 def newtonRaphson(x0,e,N):
     print('\n\n*** NEWTON RAPHSON METHOD IMPLEMENTATION ***')
@@ -41,18 +39,11 @@ x0 = input('Enter Guess: ')
 e = input('Tolerable Error: ')
 N = input('Maximum Step: ')
 
-# Converting x0 and e to float
+
 x0 = float(x0)
 e = float(e)
+'''when f(x) == 0 |==> x == -1 '''
 
-# Converting N to integer
 N = int(N)
 
-
-#Note: You can combine above three section like this
-# x0 = float(input('Enter Guess: '))
-# e = float(input('Tolerable Error: '))
-# N = int(input('Maximum Step: '))
-
-# Starting Newton Raphson Method
 newtonRaphson(x0,e,N)
